@@ -4,6 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
  * Unit test for simple App.
  */
@@ -33,6 +36,31 @@ public class AppTest
      */
     public void testApp()
     {
+
         assertTrue( true );
+    }
+
+    /**
+     * A beautiful unit test for the Sort.sort method
+     */
+    public void testSort(){
+        Sort sorter = new Sort();
+        int[] numbers = {4,6,2,7,4,6,4,5,3,2};
+        int[] sortedNumbers = numbers;
+        sorter.sort(numbers);
+        ArrayList<Integer> numbersList = new ArrayList<Integer>();
+        ArrayList<Integer> sortedNumbersList = new ArrayList<Integer>();
+        for(int i:numbers){
+            numbersList.add(i);
+
+        }
+        for(int j : sortedNumbers) {
+            sortedNumbersList.add(j);
+        }
+        Collections.sort(sortedNumbersList);
+        assertEquals(numbersList, sortedNumbersList);
+
+
+
     }
 }
