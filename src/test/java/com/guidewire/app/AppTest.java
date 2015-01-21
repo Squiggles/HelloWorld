@@ -57,13 +57,13 @@ public class AppTest
         assertEquals(numbersList, sortedNumbersList);
     }
 
-
+/*
     public void testConcat() {
         Sort mc = new Sort();
         String result = mc.concat("one", "twwo");
         assertEquals("onetwo", result);
     }
-
+*/
 
     public void testIsPrime() {
         Sort mc = new Sort();

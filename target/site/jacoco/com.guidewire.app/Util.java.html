@@ -5,5 +5,17 @@
     public static void printMessage(String msg) {
 <span class="nc" id="L6">        System.out.println(msg);</span>
 <span class="nc" id="L7">    }</span>
+
+    public static String toString(int[] numbers){
+<span class="nc" id="L10">        StringBuffer array = new StringBuffer();</span>
+<span class="nc bnc" id="L11" title="All 2 branches missed.">        if(numbers.length &gt;0){</span>
+<span class="nc bnc" id="L12" title="All 2 branches missed.">            for(int a:numbers){</span>
+<span class="nc" id="L13">                array.append(a);</span>
+            }
+        }else {
+<span class="nc" id="L16">            return &quot;Empty...&quot;;</span>
+        }
+<span class="nc" id="L18">        return array.toString();</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.5.5.201112152213</span></div></body></html>
