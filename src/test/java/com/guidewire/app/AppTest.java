@@ -60,7 +60,7 @@ public class AppTest
 /*
     public void testConcat() {
         Sort mc = new Sort();
-        String result = mc.concat("one", "twwo");
+        String result = mc.concat("one", "two");
         assertEquals("onetwo", result);
     }
 */
