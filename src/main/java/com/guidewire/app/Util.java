@@ -5,6 +5,8 @@ public class Util
     public static void printMessage(String msg) {
         System.out.println(msg);
     }
+    public static void printMessage(int msg){System.out.println(new String(Integer.toString(msg)));}
+    public static void printMessage(boolean msg){System.out.print(msg);}
 
     public static String toString(int[] numbers){
         StringBuffer array = new StringBuffer();

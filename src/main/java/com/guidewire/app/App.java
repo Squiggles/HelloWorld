@@ -21,5 +21,10 @@ public class App {
         Util.printMessage("Are all numbers in the list prime numbers? "+ sorter.isListPrime(primes));
 
         sorter.lotsOfFors();
+
+        Util.printMessage(sorter.fibonacci(30));
+        Util.printMessage(sorter.g());
     }
+
+
 }

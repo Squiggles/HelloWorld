@@ -75,6 +75,10 @@ public class AppTest
         Sort mc = new Sort();
         int[] nums = {1, 3, 7};
         assertEquals(mc.isListPrime(nums), true);
+    }
 
+    public void testFib(){
+        Sort mc = new Sort();
+        assertEquals(mc.fibonacci(30),832040 );
     }
 }

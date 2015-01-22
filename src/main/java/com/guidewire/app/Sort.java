@@ -6,6 +6,7 @@ import java.util.Collections;
 public class Sort {
     private int[] numbers;
     private int number;
+    public static final long DEFAULT_RECURSIVE_INVOCATION_DELAY = 1;
 
     public void sort(int[] values) {
         // check for empty or null array
@@ -105,6 +106,64 @@ public class Sort {
         for (String word : words) {
             System.out.printf("This is the word : %s\n", word);
         }
+    }
 
+
+    /**
+     * Delay [ms] in recursive invocation
+     */
+    private long recursiveInvocationDelay = DEFAULT_RECURSIVE_INVOCATION_DELAY;
+
+    public void setRecursiveInvocationDelay(final long recursiveInvocationDelay) {
+        this.recursiveInvocationDelay = recursiveInvocationDelay;
+    }
+
+    /**
+     * @return delay [ms] in recursive invocation
+     */
+    public long getRecursiveInvocationDelay() {
+        return recursiveInvocationDelay;
+    }
+
+    public void f() {
+        delay();
+        f();
+    }
+
+    public boolean g() {
+        delay();
+        if (g()) {
+            return true;
+        } else {
+            return g();
+        }
+    }
+
+    public boolean h(final boolean in) {
+        delay();
+        if (in) {
+            h(!in);
+        }
+        return false;
+    }
+
+    //really
+    public int fibonacci(int n) {
+        // delay();
+        if (n < 0) {
+            return 0;
+        } else if (n < 2) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    private void delay() {
+        try {
+            Thread.sleep(recursiveInvocationDelay);
+        } catch (InterruptedException e) {
+            // interrupted
+        }
     }
 }
