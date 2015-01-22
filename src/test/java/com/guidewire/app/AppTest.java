@@ -73,7 +73,7 @@ public class AppTest
 
     public void testIsListPrime() {
         Sort mc = new Sort();
-        int[] nums = {1, 3, 7};
+        int[] nums = {1, 3, 6};
         assertEquals(mc.isListPrime(nums), true);
     }
 
