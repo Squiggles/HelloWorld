@@ -85,6 +85,6 @@ public class AppTest
 
     public void testG(){
         Sort sorter = new Sort();
-        assertEquals(true, sorter.g());
+        assertEquals(true, sorter.g())
     }
 }
