@@ -73,13 +73,17 @@ public class AppTest
 
     public void testIsListPrime() {
         Sort mc = new Sort();
-        int[] nums = {1, 3, 6};
+        int[] nums = {1, 3, 7};
         assertEquals(mc.isListPrime(nums), true);
     }
 
     //should be 832040
     public void testFib(){
         Sort mc = new Sort();
-        assertEquals(mc.fibonacci(30),832041);
+        assertEquals(mc.fibonacci(30),832040);
+    }
+
+    public void failTest(){
+        fail();
     }
 }
