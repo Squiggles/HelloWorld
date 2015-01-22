@@ -57,33 +57,34 @@ public class AppTest
         assertEquals(numbersList, sortedNumbersList);
     }
 
-/*
+
     public void testConcat() {
-        Sort mc = new Sort();
-        String result = mc.concat("one", "two");
+        Sort sorter = new Sort();
+        String result = sorter.concat("one", "two");
         assertEquals("onetwo", result);
     }
-*/
+
 
     public void testIsPrime() {
-        Sort mc = new Sort();
-        assertEquals(mc.isPrime(23), true);
+        Sort sorter = new Sort();
+        assertEquals(sorter.isPrime(23), true);
     }
 
 
     public void testIsListPrime() {
-        Sort mc = new Sort();
+        Sort sorter = new Sort();
         int[] nums = {1, 3, 7};
-        assertEquals(mc.isListPrime(nums), true);
+        assertEquals(sorter.isListPrime(nums), true);
     }
 
     //should be 832040
     public void testFib(){
-        Sort mc = new Sort();
-        assertEquals(mc.fibonacci(30),832040);
+        Sort sorter = new Sort();
+        assertEquals(sorter.fibonacci(30),832040);
     }
 
-    public void failTest(){
-        fail();
+    public void testG(){
+        Sort sorter = new Sort();
+        assertEquals(true, sorter.g());
     }
 }
