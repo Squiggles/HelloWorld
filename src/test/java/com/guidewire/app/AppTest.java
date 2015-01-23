@@ -83,8 +83,5 @@ public class AppTest
         assertEquals(sorter.fibonacci(30),832040);
     }
 
-    public void testG(){
-        Sort sorter = new Sort();
-        assertEquals(true, sorter.g());
-    }
+
 }
